@@ -13,8 +13,30 @@
         <p>Este es el primer taller del curso practico de JS</p>
     </header>
     <main class="main">
-        <section class="main__container-Cuadrado">
-            <h2> Calcula el area y perimetro de un cuadrado</h2>
+        <section class="main__container">
+            <h2> CUADRADO </h2>
+            <form class="main__container-Cuadrado--form" action="">
+                <label for="inputCuadrado">Ingrese el valor de los lados:</label>
+                <input id="inputCuadrado" type="number">
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+            </form>
+        </section>
+        <section class="main__container">
+            <h2> TRIANGULO </h2>
+            <form class="main__container-Cuadrado--form" action="">
+                <label for="inputTrianguloL1">Ingrese el valor del lado 1:</label>
+                <input id="inputTrianguloL1" type="number">
+                <label for="inputTrianguloL2">Ingrese el valor del lado 2:</label>
+                <input id="inputTrianguloL2" type="number">
+                <label for="inputTrianguloB">Ingrese el valor de la base:</label>
+                <input id="inputTrianguloB" type="number">
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+            </form>
+        </section>
+        <section class="main__container">
+            <h2> CIRCULO </h2>
             <form class="main__container-Cuadrado--form" action="">
                 <label for="input-Cuadrado">Ingrese el valor de los lados del cuadradro:</label>
                 <input id="input-Cuadrado" type="number">
@@ -22,15 +44,9 @@
                 <button type="button" onclick="calcularAreaCuadrado()">calcular el area</button>
             </form>
         </section>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
     </main>
     <footer>
-
+        <p>By Franco M. Cabello</p>
     </footer>
     <script src="./figuras.js"></script>
 </body>
